@@ -37,3 +37,23 @@ ACCOUNTABILITY MATRIX
 |Ryle Camryn    |Email communication and user accounts |
 |Enakhano Zenith|Physical topology and Active Directory|
 |Sharma Dinesh  |Logical topology                      |
+
+DEVICES
+8 Desktop PC for students
+4 Laptop PC for Instructors
+4 Desktop PC for staff
+2 Desktop PC for IT
+4 Switches
+2 Routers
+1 Windows Server
+3 Wireless Access Points
+
+SERVICES
+a. HTTPS
+b. DNS
+c. DHCP
+d. Active Directory
+
+
+PROCEDURES
+Step 1: Creating the logical and physical topology
