@@ -1,6 +1,7 @@
 DOCUMENTATION OF XAVIER ACADEMY
 
 DESCRIPTION
+
 This is a documentation of Xavier Academy's network. This includes the logical and physical topologies, email communication, directory service, user accounts and a website.
 
 REVERSION INFO
@@ -14,6 +15,7 @@ APPROVAL TABLE
 |Mr. Felix|Teacher|07/04/2026|
 
 SCOPE
+
 This document applies to IT, Network and Systems Administrator, Staffs and the Director of the school.
 This document is to be referred to and updated when:
 a. Any new device or service is added
