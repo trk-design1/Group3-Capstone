@@ -21,11 +21,16 @@ SCOPE
 
 This document applies to IT, Network and Systems Administrator, Staffs and the Director of the school.
 This document is to be referred to and updated when:
+
 a. Any new device or service is added
+
 b. Any new device or service is removed
+
 c. A new IT, Staff, System or Network Administrator is employed (so they understand the network of the school)
+
 Objectives of this documentation are:
 a. Have an updated documentation of the school
+
 b. Train new staffs
 
 
@@ -50,8 +55,11 @@ DEVICES
 
 SERVICES
 a. HTTPS
+
 b. DNS
+
 c. DHCP
+
 d. Active Directory
 
 
