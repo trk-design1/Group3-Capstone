@@ -13,3 +13,9 @@ APPROVAL TABLE
 |---------|-------|----------|
 |Mr. Felix|Teacher|07/04/2026|
 
+SCOPE
+This document applies to IT, Network and Systems Administrator, Staffs and the Director of the school.
+This document is to be referred to and updated when:
+a. Any new device or service is added
+b. Any new device or service is removed
+c. A new IT, Staff, System or Network Administrator is employed (so they understand the network of the school)
