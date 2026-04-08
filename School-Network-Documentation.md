@@ -95,6 +95,9 @@ Step 1: Creating the logical and physical topology
 The physical and logical topology where created stating the where each device is connected to, the ip address and the porrts in use.
 
 Step 2: Building the physical server
+
 The physical server was built with proxmox being installed inside. 
 
 Step 3: Building the topology
+
+The physical connections of our topology were connected.
