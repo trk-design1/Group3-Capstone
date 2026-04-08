@@ -6,9 +6,10 @@ This is a documentation of Xavier Academy's network. This includes the logical a
 
 
 REVERSION INFO
-|Version|Date      |Description     |Author      |
-|-------|----------|----------------|------------|
-|1.0    |07/04/2026|Initial creation|Roman Peniel|
+|Version|Date      |Description                                                              |Author      |
+|-------|----------|-------------------------------------------------------------------------|------------|
+|1.0    |07/04/2026|Description, reversion info, approval table, accountability matrix, Scope|Roman Peniel|
+|1.1    |08/04/2026|Devices, services, addressing table, procedure step 1-2                  |Roman Peniel|
 
 
 APPROVAL TABLE
@@ -73,6 +74,27 @@ c. DHCP
 d. Active Directory
 
 
+ADDRESSING TABLE
+|Device     |Mode  |IP Adrress|
+|-----------|------|---------------|
+|Router 1   |Manual|10.128.250.1/24|
+|Router 2   |Manual|10.128.250.1/24|              
+|Switch 1   |Manual|10.128.250.1/24|
+|Switch 2   |Manual|10.128.250.1/24|
+|Student PC1|DHCP  |10.128.250.1/24|
+|Student PC2|DHCP  |10.128.250.1/24|
+|Staff PC1  |DHCP  |10.128.250.1/24|
+|IT PC      |DHCP  |10.128.250.1/24|
+|Server     |Manual|10.128.250.1/24|
+
+
 PROCEDURES
 
 Step 1: Creating the logical and physical topology
+
+The physical and logical topology where created stating the where each device is connected to, the ip address and the porrts in use.
+
+Step 2: Building the physical server
+The physical server was built with proxmox being installed inside. 
+
+Step 3: Building the topology
