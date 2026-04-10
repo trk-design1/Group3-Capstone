@@ -89,17 +89,17 @@ ADDRESSING TABLE
 
 DEVICE
 ISP-Router1
-|Port  |Mode  |IP Address    |Connected to |Port(Connected device)|
-|------|------|--------------|-------------|----------------------|
-|G0/0/0|DHCP  |10.128.209.131|Cloud        |T4.2
-|G0/0/1|Manual|10.128.250.1  |Core-Switch1 |
+|Port  |Mode  |IP Address       |Connected to |Port(Connected device)|
+|------|------|-----------------|-------------|----------------------|
+|G0/0/0|DHCP  |10.128.209.131/24|Cloud        |T4.2
+|G0/0/1|Manual|10.128.250.1/24  |Core-Switch1 |
 
 
 ISP-Router2
-|Port  |Mode  |IP Address    |Connected to |Port(Connected device)|
-|------|------|--------------|-------------|----------------------|
-|G0/0/0|DHCP  |10.128.209.113|Cloud        |T4.1
-|G0/0/1|Manual|10.128.250.2  |Core-Switch2 |
+|Port  |Mode  |IP Address      |Connected to |Port(Connected device)|
+|------|------|-----------------|-------------|----------------------|
+|G0/0/0|DHCP  |10.128.209.132/24|Cloud        |T4.1
+|G0/0/1|Manual|10.128.250.2     |Core-Switch2 |
 
 
 
