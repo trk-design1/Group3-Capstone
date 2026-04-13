@@ -89,17 +89,23 @@ ADDRESSING TABLE
 
 DEVICE
 ISP-Router1
-|Port  |Mode  |IP Address       |Connected to |Port(Connected device)|
-|------|------|-----------------|-------------|----------------------|
-|G0/0/0|DHCP  |10.128.209.131/24|Cloud        |T4.2
-|G0/0/1|Manual|10.128.250.1/24  |Core-Switch1 |
+|Port  |Mode  |IP Address       | Gateway      |Connected to |Port(Connected device)|
+|------|------|-----------------|--------------|-------------|----------------------|
+|G0/0/0|DHCP  |10.128.209.131/24|10.128.209.1  |Cloud        |T4.2                  |
+|G0/0/1|Manual|192.168.100.1/24 |N/A           |L3-S1        |Fa/01                 |
 
 
 ISP-Router2
-|Port  |Mode  |IP Address      |Connected to |Port(Connected device)|
-|------|------|-----------------|-------------|----------------------|
-|G0/0/0|DHCP  |10.128.209.132/24|Cloud        |T4.1
-|G0/0/1|Manual|10.128.250.2     |Core-Switch2 |
+|Port  |Mode  |IP Address       | Gateway      |Connected to |Port(Connected device)|
+|------|------|-----------------|--------------|-------------|----------------------|
+|G0/0/0|DHCP  |10.128.209.131/24|10.128.209.1  |Cloud        |T4.1                  |
+|G0/0/1|Manual|192.168.100.1/24 |N/A           |L3-S2        |Fa/03                 |
+
+L3-S1
+|Port  |IP Address       | Gateway      |Connected to |Port(Connected device)|VLAN|
+|------|-----------------|--------------|-------------|----------------------|----|
+|FA0/1 |10.128.209.131/24|192.168.100.1 |ISP-Router1  |G0/0/1                |N/A |
+|FA0/2 |192.168.100.1/24 |N/A           |L3-S2        |SVI-Students-Class1 GW|20  |
 
 
 
