@@ -102,10 +102,18 @@ ISP-Router2
 |G0/0/1|Manual|192.168.100.1/24 |N/A           |L3-S2        |Fa/03                 |
 
 L3-S1
-|Port  |IP Address       | Gateway      |Connected to |Port(Connected device)|VLAN|
-|------|-----------------|--------------|-------------|----------------------|----|
-|FA0/1 |10.128.209.131/24|192.168.100.1 |ISP-Router1  |G0/0/1                |N/A |
-|FA0/2 |192.168.100.1/24 |N/A           |L3-S2        |SVI-Students-Class1 GW|20  |
+|Port   |IP Address       | Gateway      |Connected to |Port(Connected device)|VLAN|
+|-------|-----------------|--------------|-------------|----------------------|----|
+|FA0/1  |10.128.209.131/24|192.168.100.1 |ISP-Router1  |G0/0/1                |N/A |
+|FA0/2  |192.168.20.1/24  |N/A           |SW-1         |Students-Class1 GW    |20  |
+|FA0/3  |192.168.30.1/24  |N/A           |SW-1         |Students-Class1 GW    |30  |
+|FA0/4  |192.168.40.1/24  |N/A           |SW-2         |Students-Class1 GW    |40  |
+|FA0/5  |192.168.99.1/24  |N/A           |SW-2         |Students-Class1 GW    |99  |
+|FA0/6  |192.168.88.1/24  |N/A           |SW-3         |Students-Class1 GW    |88  |
+|FA0/9  |192.168.10.1/24  |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+|FA0/10 |192.168.10.1/24  |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+
+
 
 
 
