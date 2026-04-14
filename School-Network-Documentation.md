@@ -153,3 +153,9 @@ The physical server was built with proxmox being installed inside.
 Step 3: Building the topology
 
 The physical connections of our topology were connected.
+
+Step 4: Creating the Addressing Table
+
+We created an addressing table for the routers, switches and pcs
+
+Step 5: Configured the devices on the logical topology
