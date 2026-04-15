@@ -172,7 +172,9 @@ Install Windows Server 2022 on the virtual environment and configure the followi
 
 Active Directory Domain Services (AD DS)
 DHCP (Dynamic Host Configuration Protocol)
+
 DNS (Domain Name System)
+
 Step 8: Website Development
 
 Develop and deploy the Xavier Academy website to provide institutional information and services.
