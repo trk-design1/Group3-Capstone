@@ -171,6 +171,7 @@ Step 7: Server Configuration
 Install Windows Server 2022 on the virtual environment and configure the following services:
 
 Active Directory Domain Services (AD DS)
+
 DHCP (Dynamic Host Configuration Protocol)
 
 DNS (Domain Name System)
