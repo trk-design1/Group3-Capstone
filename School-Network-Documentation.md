@@ -75,30 +75,19 @@ d. Active Directory
 
 
 ADDRESSING TABLE
-|Device     |Mode  |IP Adrress     |
-|-----------|------|---------------|
-|Router 1   |Manual|10.128.250.1/24|
-|Router 2   |Manual|10.128.250.1/24|              
-|Switch 1   |Manual|10.128.250.1/24|
-|Switch 2   |Manual|10.128.250.1/24|
-|Student PC1|DHCP  |10.128.250.1/24|
-|Student PC2|DHCP  |10.128.250.1/24|
-|Staff PC1  |DHCP  |10.128.250.1/24|
-|IT PC      |DHCP  |10.128.250.1/24|
-|Server     |Manual|10.128.250.1/24|
 
 DEVICE
 ISP-Router1
 |Port  |Mode  |IP Address       | Gateway      |Connected to |Port(Connected device)|
 |------|------|-----------------|--------------|-------------|----------------------|
-|G0/0/0|DHCP  |10.128.209.131/24|10.128.209.1  |Cloud        |T4.2                  |
+|G0/0/0|DHCP  |10.128.209.132/24|10.128.209.1  |Cloud        |T4.2                  |
 |G0/0/1|Manual|192.168.100.1/24 |N/A           |L3-S1        |Fa/01                 |
 
 
 ISP-Router2
 |Port  |Mode  |IP Address       | Gateway      |Connected to |Port(Connected device)|
 |------|------|-----------------|--------------|-------------|----------------------|
-|G0/0/0|DHCP  |10.128.209.131/24|10.128.209.1  |Cloud        |T4.1                  |
+|G0/0/0|DHCP  |10.128.209.198/24|10.128.209.1  |Cloud        |T4.1                  |
 |G0/0/1|Manual|192.168.100.1/24 |N/A           |L3-S2        |Fa/03                 |
 
 VLAN TABLE
@@ -135,6 +124,53 @@ L3-S2
 |FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
 |FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
 
+L2-SW1-Classroom1
+|Port   |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
+|-------|------------------|--------------|-------------|----------------------|----|
+|FA0/1  |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
+|FA0/2  |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
+|FA0/3  |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
+|FA0/4  |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
+|FA0/5  |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
+|FA0/6  |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
+|FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+|FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+
+L2-SW2-Classroom2
+|Port   |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
+|-------|------------------|--------------|-------------|----------------------|----|
+|FA0/1  |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
+|FA0/2  |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
+|FA0/3  |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
+|FA0/4  |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
+|FA0/5  |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
+|FA0/6  |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
+|FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+|FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+
+L2-SW3-Classroom3
+|Port   |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
+|-------|------------------|--------------|-------------|----------------------|----|
+|FA0/1  |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
+|FA0/2  |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
+|FA0/3  |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
+|FA0/4  |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
+|FA0/5  |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
+|FA0/6  |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
+|FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+|FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+
+L2-SW4-Classroom4
+|Port   |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
+|-------|------------------|--------------|-------------|----------------------|----|
+|FA0/1  |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
+|FA0/2  |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
+|FA0/3  |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
+|FA0/4  |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
+|FA0/5  |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
+|FA0/6  |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
+|FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+|FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
 
 
 
@@ -170,11 +206,11 @@ Step 7: Server Configuration
 
 Install Windows Server 2022 on the virtual environment and configure the following services:
 
-Active Directory Domain Services (AD DS)
+a. Active Directory Domain Services (AD DS)
 
-DHCP (Dynamic Host Configuration Protocol)
+b. DHCP (Dynamic Host Configuration Protocol)
 
-DNS (Domain Name System)
+c. DNS (Domain Name System)
 
 Step 8: Website Development
 
