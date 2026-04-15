@@ -142,30 +142,37 @@ L3-S2
 
 PROCEDURES
 
-Step 1: Creating the logical and physical topology
+Step 1: Design of Network Topology
 
-The physical and logical topology where created stating the where each device is connected to, the ip address and the porrts in use.
+Develop both logical and physical topology diagrams, clearly identifying device connections, IP addressing, and port assignments.
 
-Step 2: Building the physical server
+Step 2: Physical Server Deployment
 
-The physical server was built with proxmox being installed inside. 
+Provision and configure the physical server hardware. Install the hypervisor (Proxmox VE) to support virtualization.
 
-Step 3: Building the topology
+Step 3: Physical Network Setup
 
-The physical connections of our topology were connected.
+Establish all physical connections between routers, switches, servers, and end-user devices according to the topology design.
 
-Step 4: Creating the Addressing Table
+Step 4: IP Address Planning
 
-We created an addressing table for the routers, switches and pcs
+Develop a structured IP addressing scheme for all network devices, ensuring consistency and scalability.
 
-Step 5: Configured the devices on the logical topology
-We configured all the devices on the packet tracer 
+Step 5: Logical Configuration
 
-Step 6: Connected the physical devices and configured them
-We connected the routers, switches, servers and pcs according to the topology and configured them.
+Configure all devices within the simulated environment (e.g., Cisco Packet Tracer) to validate the network design.
 
-Step 7: Configuring the physical server
-We installed proxmox on the physical server. Afterwards we installed Microsoft Server 2022 version on the  server. After the configuration we setup an Active Directory Domain Services (ADDS), Dynamic Host Configuration Protocol (DHCP) and Domain Name Service (DNS) on the server.
+Step 6: Deployment and Configuration
 
-Step 8: Creation of the Website
-The website was created featuring Xavier's Academy's information
+Implement the network physically by connecting and configuring all devices according to the validated design.
+
+Step 7: Server Configuration
+
+Install Windows Server 2022 on the virtual environment and configure the following services:
+
+Active Directory Domain Services (AD DS)
+DHCP (Dynamic Host Configuration Protocol)
+DNS (Domain Name System)
+Step 8: Website Development
+
+Develop and deploy the Xavier Academy website to provide institutional information and services.
