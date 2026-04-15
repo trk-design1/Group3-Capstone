@@ -159,3 +159,13 @@ Step 4: Creating the Addressing Table
 We created an addressing table for the routers, switches and pcs
 
 Step 5: Configured the devices on the logical topology
+We configured all the devices on the packet tracer 
+
+Step 6: Connected the physical devices and configured them
+We connected the routers, switches, servers and pcs according to the topology and configured them.
+
+Step 7: Configuring the physical server
+We installed proxmox on the physical server. Afterwards we installed Microsoft Server 2022 version on the  server. After the configuration we setup an Active Directory Domain Services (ADDS), Dynamic Host Configuration Protocol (DHCP) and Domain Name Service (DNS) on the server.
+
+Step 8: Creation of the Website
+The website was created featuring Xavier's Academy's information
