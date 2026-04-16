@@ -129,46 +129,31 @@ L2-S1-Classroom1
 |Port                  |IP Address        | Gateway      |Connected to   |Port(Connected device)|VLAN|
 |----------------------|------------------|--------------|---------------|----------------------|----|
 |FA0/1                 |N/A               |192.168.100.1 |L3-S1          |Fa0/2                 |20  |
-|FA0/1                 |N/A               |192.168.100.1 |L3-S2          |Fa0/2                 |20  |
-|FA0/1                 |N/A               |192.168.100.1 |PC1(Classroom1)|NIC                   |N/A |
-|FA0/1                 |N/A               |192.168.100.1 |Xavier_AP1     |LAN 1                 |N/A |
+|FA0/2                 |N/A               |192.168.100.1 |L3-S2          |Fa0/2                 |20  |
+|FA0/3                 |N/A               |192.168.100.1 |PC1(Classroom1)|NIC                   |N/A |
+|FA0/19                |N/A               |192.168.100.1 |Xavier_AP1     |LAN 1                 |N/A |
 
-L2-SW2-Classroom2
-|Port                  |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
-|----------------------|------------------|--------------|-------------|----------------------|----|
-|FA0/1                 |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
-|FA0/2                 |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
-|FA0/3                 |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
-|FA0/4                 |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
-|FA0/5                 |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
-|FA0/6                 |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
-|FA0/9 (Port Channel)  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
-|FA0/10 (Port Channel) |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+L2-S2-Classroom2
+|Port                  |IP Address        | Gateway      |Connected to   |Port(Connected device)|VLAN|
+|----------------------|------------------|--------------|---------------|----------------------|----|
+|FA0/1                 |N/A               |192.168.100.1 |L3-S1          |Fa0/3                 |20  |
+|FA0/2                 |N/A               |192.168.100.1 |L3-S2          |Fa0/2                 |20  |
+|FA0/3                 |N/A               |192.168.100.1 |PC2(Classroom2)|NIC                   |N/A |
 
-L2-SW3-Classroom3
-|Port   |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
-|-------|------------------|--------------|-------------|----------------------|----|
-|FA0/1  |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
-|FA0/2  |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
-|FA0/3  |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
-|FA0/4  |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
-|FA0/5  |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
-|FA0/6  |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
-|FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
-|FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
+L2-S3-Classroom3
+|Port                  |IP Address        | Gateway      |Connected to   |Port(Connected device)|VLAN|
+|----------------------|------------------|--------------|---------------|----------------------|----|
+|FA0/1                 |N/A               |192.168.100.1 |L3-S1          |Fa0/4                 |20  |
+|FA0/2                 |N/A               |192.168.100.1 |L3-S2          |Fa0/4                 |20  |
+|FA0/3                 |N/A               |192.168.100.1 |PC3(Staff)     |NIC                   |N/A |
 
-L2-SW4-Classroom4
-|Port   |IP Address        | Gateway      |Connected to |Port(Connected device)|VLAN|
-|-------|------------------|--------------|-------------|----------------------|----|
-|FA0/1  |192.168.100.141/24|192.168.100.1 |ADDS Server  |G0/0/1                |N/A |
-|FA0/2  |192.168.100.15/24 |N/A           |ISP-Router2  |Students-Class1 GW    |20  |
-|FA0/3  |192.168.30.1/24   |N/A           |SW-1         |Students-Class1 GW    |30  |
-|FA0/4  |192.168.40.1/24   |N/A           |SW-2         |Students-Class2 GW    |40  |
-|FA0/5  |192.168.99.1/24   |N/A           |SW-2         |Students-Class1 GW    |99  |
-|FA0/6  |192.168.88.1/24   |N/A           |SW-3         |Students-Class1 GW    |88  |
-|FA0/9  |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
-|FA0/10 |192.168.10.1/24   |N/A           |L3-S2        |Students-Class1 GW    |N/A |
 
+L2-S4-Classroom4
+|Port                  |IP Address        | Gateway      |Connected to   |Port(Connected device)|VLAN|
+|----------------------|------------------|--------------|---------------|----------------------|----|
+|FA0/1                 |N/A               |192.168.100.1 |L3-S1          |Fa0/5                 |20  |
+|FA0/2                 |N/A               |192.168.100.1 |L3-S2          |Fa0/5                 |20  |
+|FA0/3                 |N/A               |192.168.100.1 |PC4(Reception) |NIC                   |N/A |
 
 
 
