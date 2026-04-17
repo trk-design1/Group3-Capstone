@@ -155,6 +155,72 @@ L2-S4-Classroom4
 |FA0/3                 |N/A               |192.168.100.1 |PC4(Reception) |NIC                   |N/A |
 
 
+ACCESS CONTROL LISTS (ACL)
+ISP-Router1
+ip access-list extended EDGE_IN
+ permit tcp any any 
+ permit udp any any
+ permit icmp any any echo-reply
+ permit icmp any any unreachable
+ permit icmp any any time-exceeded
+ permit tcp any any eq 80
+ permit tcp any any eq 443
+ permit tcp 192.168.10.0 0.0.0.255 any eq 22
+ deny   ip any any 
+
+ ip access-list standard MGMT_SSH
+ permit 192.168.10.0 0.0.0.255
+ deny   any 
+
+ ip access-list standard NAT_ACL
+ permit 192.168.0.0 0.0.255.255
+
+ISP-Router2
+ip access-list standard NAT_ACL
+ permit 192.168.0.0 0.0.255.255
+ permit 172.16.0.0 0.0.255.255
+
+ VTY Access: SSH from IT VLAN only
+ip access-list standard MGMT_SSH
+ permit 192.168.10.0 0.0.0.255
+ deny   any log
+
+L3-S1
+ip access-list extended VLAN_POLICY
+ permit icmp any any
+ permit ospf any any
+ permit udp any any
+ permit tcp any any established
+ permit tcp any any eq 80
+ permit tcp any any eq 443
+ permit tcp any any eq 53
+ permit udp any any eq 53
+ permit tcp 192.168.10.0 0.0.0.255 any eq 22
+ deny   ip any any log
+
+ ip access-list standard MGMT_SSH
+ permit 192.168.10.0 0.0.0.255
+ deny   any log
+
+
+ L3-S2
+ip access-list extended VLAN_POLICY
+ permit icmp any any
+ permit ospf any any
+ permit udp any any
+ permit tcp any any established
+ permit tcp any any eq 80
+ permit tcp any any eq 443
+ permit tcp any any eq 53
+ permit udp any any eq 53
+ permit tcp 192.168.10.0 0.0.0.255 any eq 22
+ deny   ip any any 
+
+VTY Access: SSH from IT VLAN only
+ip access-list standard MGMT_SSH
+ permit 192.168.10.0 0.0.0.255
+ deny   any log
+ 
 
 
 PROCEDURES
