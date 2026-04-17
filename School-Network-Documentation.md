@@ -10,7 +10,8 @@ REVERSION INFO
 |-------|----------|-------------------------------------------------------------------------|------------|
 |1.0    |07/04/2026|Description, reversion info, approval table, accountability matrix, Scope|Roman Peniel|
 |1.1    |13/04/2026|Devices, services, addressing table, procedure step 1-2                  |Roman Peniel|
-|1.2    |16/04/2026|Procedure step 3-7                                                       |Roman Peniel|
+|1.2    |15/04/2026|Procedure step 3-4                                                       |Roman Peniel|
+|1.3    |16/04/2026|Procedure step 5-7                                                       |Roman Peniel|
 
 
 APPROVAL TABLE
@@ -37,13 +38,13 @@ b. Train new staffs
 
 
 ACCOUNTABILITY MATRIX
-|Name           |Responsibility                             |
-|---------------|-------------------------------------------|
-|Roman Peniel   |SOP documentation,ADDS, DHCP, DNS          |
-|Byansi Samora  |Logical topology and physical configuration| 
-|Ryle Camryn    |Physical Configuration                     |
-|Enakhano Zenith|Physical topology annd website             |
-|Sharma Dinesh  |Powerpoint and physical configuration      |
+|Name           |Responsibility                                 |
+|---------------|-----------------------------------------------|
+|Roman Peniel   |SOP documentation,ADDS, DHCP and DNS           |
+|Byansi Samora  |Logical topology and physical configuration    | 
+|Ryle Camryn    |Physical Configuration and powerpoint          |
+|Enakhano Zenith|Physical topology, logical topology and website|
+|Sharma Dinesh  |Powerpoint and physical configuration          |
 
 DEVICES
 
