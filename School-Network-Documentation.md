@@ -9,7 +9,8 @@ REVERSION INFO
 |Version|Date      |Description                                                              |Author      |
 |-------|----------|-------------------------------------------------------------------------|------------|
 |1.0    |07/04/2026|Description, reversion info, approval table, accountability matrix, Scope|Roman Peniel|
-|1.1    |08/04/2026|Devices, services, addressing table, procedure step 1-2                  |Roman Peniel|
+|1.1    |13/04/2026|Devices, services, addressing table, procedure step 1-2                  |Roman Peniel|
+|1.2    |16/04/2026|Procedure step 3-7                                                       |Roman Peniel|
 
 
 APPROVAL TABLE
@@ -36,25 +37,23 @@ b. Train new staffs
 
 
 ACCOUNTABILITY MATRIX
-|Name           |Responsibility                        |
-|---------------|--------------------------------------|
-|Roman Peniel   |SOP documentation                     |
-|Byansi Samora  |Logical topology                      | 
-|Ryle Camryn    |Email communication and user accounts |
-|Enakhano Zenith|Physical topology and Active Directory|
-|Sharma Dinesh  |Logical topology                      |
+|Name           |Responsibility                             |
+|---------------|-------------------------------------------|
+|Roman Peniel   |SOP documentation,ADDS, DHCP, DNS          |
+|Byansi Samora  |Logical topology and physical configuration| 
+|Ryle Camryn    |Physical Configuration                     |
+|Enakhano Zenith|Physical topology annd website             |
+|Sharma Dinesh  |Powerpoint and physical configuration      |
 
 DEVICES
 
 8 Desktop PC for students
 
-4 Laptop PC for Instructors
+5 Desktop PC for staff/IT/instructors
 
-4 Desktop PC for staff
+2 Layer 3 switches
 
-2 Desktop PC for IT
-
-4 Switches
+4 Layer 2 Switches
 
 2 Routers
 
