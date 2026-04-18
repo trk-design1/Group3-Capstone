@@ -73,6 +73,143 @@ c. DHCP
 
 d. Active Directory
 
+NETWORK STANDARDS AND SECURITY BASELINE
+
+1. Spanning Tree Protocol (STP)
+
+To prevent switching loops and improve redundancy:
+
+Rapid PVST+ shall be enabled.
+
+Core Layer 3 switches shall be configured as root bridge
+.
+Secondary root bridge shall be configured on backup switch.
+
+PortFast shall be enabled on end-user access ports only.
+
+BPDU Guard shall be enabled on all user-facing ports.
+
+
+Example:
+
+spanning-tree mode rapid-pvst
+
+spanning-tree vlan 1,10,20,30,40,50,88,99 root primary
+
+spanning-tree portfast default
+
+spanning-tree bpduguard default
+
+2. Disable Discovery Protocols
+
+To reduce information leakage:
+
+no cdp run
+
+no lldp run
+
+3. Secure Shell (SSH)
+
+Telnet is prohibited. SSH Version 2 shall be used.
+
+hostname L3-S1
+
+ip domain-name xavieracademy.local
+
+crypto key generate rsa modulus 2048
+
+ip ssh version 2
+
+username admin secret StrongPassword
+
+line vty 0 4
+
+transport input ssh
+
+login local
+
+Access to management interfaces is restricted to VLAN 10 (IT/Management).
+
+4. Login and Warning Banners
+
+All network devices shall display authorized-use warnings.
+
+banner motd #
+
+WARNING: Authorized Xavier Academy Personnel Only.
+
+Unauthorized access is prohibited and monitored.
+
+#
+
+5. Executive Timeouts
+
+Idle sessions shall automatically disconnect.
+
+Console
+
+
+line console 0
+
+exec-timeout 5 0
+
+logging synchronous
+
+VTY
+
+line vty 0 4
+
+exec-timeout 10 0
+
+6. Storm Control
+
+To protect against broadcast and multicast storms:
+
+interface range fa0/1 - 24
+
+storm-control broadcast level 5.00
+
+storm-control multicast level 5.00
+
+storm-control action shutdown
+
+7. Unused Ports Security Standard
+
+All unused ports shall be administratively disabled and assigned to an unused VLAN.
+
+vlan 999
+
+name UNUSED_PORTS
+
+interface range fa0/10 - 24
+
+switchport mode access
+
+switchport access vlan 99
+
+shutdown
+
+description UNUSED PORT
+
+8. Native VLAN for Untagged Traffic
+
+Native VLAN shall be changed from default VLAN 1.
+
+vlan 99
+
+name Native
+
+interface fa0/1
+
+switchport trunk encapsulation dot1q
+
+switchport mode trunk
+
+switchport trunk native vlan 99
+
+
+VLAN 1 shall not be used for user traffic.
+
 
 ADDRESSING TABLE
 
