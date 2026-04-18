@@ -10,8 +10,8 @@ REVERSION INFO
 |-------|----------|-------------------------------------------------------------------------|------------|
 |1.0    |07/04/2026|Description, reversion info, approval table, accountability matrix, Scope|Roman Peniel|
 |1.1    |13/04/2026|Devices, services, addressing table, procedure step 1-2                  |Roman Peniel|
-|1.2    |15/04/2026|Procedure step 3-4                                                       |Roman Peniel|
-|1.3    |16/04/2026|Procedure step 5-7                                                       |Roman Peniel|
+|1.2    |15/04/2026|Procedure step 3-4,  Security hardening, STP, SSH, banners,              |Roman Peniel|
+|1.3    |16/04/2026|Procedure step 5-7, storm control, port security standards             |Roman Peniel|
 
 
 APPROVAL TABLE
